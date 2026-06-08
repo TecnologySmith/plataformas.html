@@ -3,83 +3,382 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios Digitales - TecnologySmith</title>
+  <title>TecnologySmith — Servicios Digitales</title>
   <link rel="icon" href="https://i.ibb.co/8DZznd47/image.png" type="image/png">
-  <style>
-    html {
-  scroll-padding-top: 100px; /* ajusta según la altura de tu navbar */
-  scroll-behavior: smooth;   /* para efecto suave */
-    }
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #282f3c; }
-    header { background-color: #222; padding: 1rem; color: white; text-align: center; }
-    nav { background-color: #444; display: flex; justify-content: center; gap: 2rem; padding: 0.5rem 0; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    .section-title { color: white; margin: 2rem auto 1rem; text-align: center; font-size: 1.5rem; }
-    p {color: aliceblue;}
-    a {color: aliceblue;}
-    .cards-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; padding: 1rem; }
-    .card { background-color: rgb(126, 119, 129); border-radius: 8px; width: 220px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; padding: 1rem; }
-    .card img { width: 100px; height: 100px; object-fit: contain; }
-    .card h4 { margin: 1rem 0 0.5rem; }
-    .card p { margin: 0.5rem 0; font-weight: bold; }
-    .card a { display: inline-block; margin-top: 0.5rem; background-color: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  
-  <header>
-    <h1>TecnologySmith</h1>
-  </header>
-
-  <nav>
-    <a href="https://tecnologysmith.github.io/TecnologySmithStore/">$ TECNOLOGYSMITH STORE $</a>
-    <a href="https://tecnologysmith.github.io/Peliculas_Melgar.html/">Películas Melgar</a>
-    <a href="https://tecnologysmith.github.io/pagina_web_gratis_2/">Solicita tu pagina Web (grartis)</a>
-    <a href="#contacto">Contacto</a>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="https://i.ibb.co/8DZznd47/image.png" alt="Logo" class="logo-img">
+        <span>TecnologySmith</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://tecnologysmith.github.io/TecnologySmithStore/" target="_blank">🛒 Store</a></li>
+        <li><a href="https://tecnologysmith.github.io/Peliculas_Melgar.html/" target="_blank">🎬 Películas Melgar</a></li>
+        <li><a href="https://tecnologysmith.github.io/pagina_web_gratis_2/" target="_blank">🌐 Web Gratis</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="streaming">
-    <h2 class="section-title">Servicios de Streaming Multimedia</h2>
-    <div class="cards-container">
-      <div class="card"><img src="https://i.ibb.co/sZp8vVt/images.jpg" alt="Armar mi combo"><h4>Arma tu combo 2 o 3 plataformas</h4><p>desde $20.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20armar%20mi%20combo%20desde%20$18.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/CpPVYsmy/image.png" alt="Miembro Premium Peliculas Melgar"><h4>Miembro Premium Peliculas Melgar</h4><p>$10.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20ser%20premium%20$10.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/1JYhz0P1/download.png" alt="Netflix"><h4>Netflix+🎁</h4><p>$15.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Netflix%20$15.000+🎁">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/ks0xQ8qT/download.png" alt="Amazon"><h4>Amazon</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Amazon%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney"><h4>Disney Generivco</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$8.000">Más información</a></div>
-       <div class="card"><img src="https://i.ibb.co/LX0SXJQg/5152f000-7d6a-4850-9b44-ccae770f310e.jpg" alt="Disney7"><h4>Disney Premium 7 espn</h4><p>$18.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$18.000">Más información</a></div>
-       <div class="card"><img src="https://i.ibb.co/p6r0q39M/4ae8b569-9386-4364-a222-c90e71f98461.jpg" alt="Disney3"><h4>Disney Premium 3 espn</h4><p>$15.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$15.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg" alt="HBO MAX"><h4>HBO MAX</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20HBO%20MAX%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/1fzgPzZL/download.jpg" alt="Paramount"><h4>Paramount</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Paramount%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/213QN2Sd/download.jpg" alt="Crunchyroll"><h4>Crunchyroll</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Crunchyroll%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/fzMTKFvB/download.jpg" alt="IPTV"><h4>IPTV</h4><p>$12.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20IPTV%20$10.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"><h4>YouTube 1 mes</h4><p>$12.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20YouTube%201%20mes%20$12.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"><h4>YouTube 3 meses</h4><p>$24.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20YouTube%203%20meses%20$24.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"><h4>Spotify 1 mes</h4><p>$12.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%201%20mes%20$12.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"><h4>Spotify 2 meses</h4><p>$18.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%202%20meses%20$18.000">Más información</a></div>
-      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"><h4>Spotify 3 meses</h4><p>$25.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%203%20meses%20$25.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/SXzZcJ9P/image.png" alt="DIRECTV"><h4>DIRECTV GO GOLD</h4><p>$17.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20DIRECTV%20GO%20GOLD%20$17.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/jvc3ghQ3/image.png" alt="VIX"><h4>VIX</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20VIX%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/pjWVJ2SM/image.png" alt="Plex"><h4>Plex</h4><p>$9.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Plex%20$9.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/8LYLqzZk/image.png" alt="PornHub"><h4>PornHub 1 mes</h4><p>$12.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20PornHub%201%20mes%20$12.000">Más información</a></div>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">✦ Servicios Digitales Premium</span>
+      <h1 class="hero-title">Todo lo digital,<br><em>al mejor precio</em></h1>
+      <p class="hero-sub">Streaming, música, educación y más. Accede hoy con precios desde <strong>$7.000</strong></p>
+      <div class="hero-btns">
+        <a href="#streaming" class="btn-primary">Ver Streaming</a>
+        <a href="#lms" class="btn-outline">Ver LMS</a>
+      </div>
+    </div>
+    <div class="hero-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg" alt="HBO Max">
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="streaming">Streaming</button>
+    <button class="filter-btn" data-filter="musica">Música</button>
+    <button class="filter-btn" data-filter="lms">Educación</button>
+    <button class="filter-btn" data-filter="combo">Combos</button>
+  </div>
+
+  <!-- STREAMING -->
+  <section id="streaming" class="section">
+    <div class="section-header">
+      <div class="section-tag">🎬</div>
+      <h2 class="section-title">Streaming Multimedia</h2>
+      <p class="section-desc">Las mejores plataformas al precio más accesible de Colombia</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="card" data-category="combo" data-aos>
+        <div class="card-badge badge-hot">🔥 Más vendido</div>
+        <div class="card-icon"><img src="https://i.ibb.co/sZp8vVt/images.jpg" alt="Combo"></div>
+        <div class="card-body">
+          <h4>Arma tu Combo</h4>
+          <p class="card-desc">2 o 3 plataformas a tu elección</p>
+          <div class="card-price">desde <strong>$20.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20armar%20mi%20combo%20desde%20$18.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/CpPVYsmy/image.png" alt="Películas Melgar"></div>
+        <div class="card-body">
+          <h4>Miembro Premium</h4>
+          <p class="card-desc">Películas Melgar — acceso completo</p>
+          <div class="card-price"><strong>$10.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20ser%20premium%20$10.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-badge badge-gift">🎁 Con regalo</div>
+        <div class="card-icon"><img src="https://i.ibb.co/1JYhz0P1/download.png" alt="Netflix"></div>
+        <div class="card-body">
+          <h4>Netflix</h4>
+          <p class="card-desc">Acceso completo + regalo sorpresa</p>
+          <div class="card-price"><strong>$15.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Netflix%20$15.000+🎁">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/ks0xQ8qT/download.png" alt="Amazon"></div>
+        <div class="card-body">
+          <h4>Amazon Prime Video</h4>
+          <p class="card-desc">Series, películas y más</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Amazon%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney"></div>
+        <div class="card-body">
+          <h4>Disney+ Genérico</h4>
+          <p class="card-desc">Acceso a contenido Disney</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-badge badge-premium">⭐ Premium</div>
+        <div class="card-icon"><img src="https://i.ibb.co/LX0SXJQg/5152f000-7d6a-4850-9b44-ccae770f310e.jpg" alt="Disney7"></div>
+        <div class="card-body">
+          <h4>Disney+ Premium</h4>
+          <p class="card-desc">Incluye 7 canales ESPN</p>
+          <div class="card-price"><strong>$18.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$18.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/p6r0q39M/4ae8b569-9386-4364-a222-c90e71f98461.jpg" alt="Disney3"></div>
+        <div class="card-body">
+          <h4>Disney+ Premium</h4>
+          <p class="card-desc">Incluye 3 canales ESPN</p>
+          <div class="card-price"><strong>$15.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Disney%20$15.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg" alt="HBO MAX"></div>
+        <div class="card-body">
+          <h4>HBO MAX</h4>
+          <p class="card-desc">Series y películas exclusivas</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20HBO%20MAX%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/1fzgPzZL/download.jpg" alt="Paramount"></div>
+        <div class="card-body">
+          <h4>Paramount+</h4>
+          <p class="card-desc">Entretenimiento sin límites</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Paramount%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/213QN2Sd/download.jpg" alt="Crunchyroll"></div>
+        <div class="card-body">
+          <h4>Crunchyroll</h4>
+          <p class="card-desc">El mejor anime sin anuncios</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Crunchyroll%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/fzMTKFvB/download.jpg" alt="IPTV"></div>
+        <div class="card-body">
+          <h4>IPTV</h4>
+          <p class="card-desc">Canales en vivo ilimitados</p>
+          <div class="card-price"><strong>$12.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20IPTV%20$10.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"></div>
+        <div class="card-body">
+          <h4>YouTube Premium</h4>
+          <p class="card-desc">1 mes sin anuncios</p>
+          <div class="card-price"><strong>$12.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20YouTube%201%20mes%20$12.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-badge badge-savings">💰 Ahorra</div>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube"></div>
+        <div class="card-body">
+          <h4>YouTube Premium</h4>
+          <p class="card-desc">3 meses sin anuncios</p>
+          <div class="card-price"><strong>$24.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20YouTube%203%20meses%20$24.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/SXzZcJ9P/image.png" alt="DIRECTV"></div>
+        <div class="card-body">
+          <h4>DIRECTV GO Gold</h4>
+          <p class="card-desc">TV y deportes en vivo</p>
+          <div class="card-price"><strong>$17.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20DIRECTV%20GO%20GOLD%20$17.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/jvc3ghQ3/image.png" alt="VIX"></div>
+        <div class="card-body">
+          <h4>VIX</h4>
+          <p class="card-desc">Contenido latino premium</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20VIX%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/pjWVJ2SM/image.png" alt="Plex"></div>
+        <div class="card-body">
+          <h4>Plex</h4>
+          <p class="card-desc">Tu servidor multimedia personal</p>
+          <div class="card-price"><strong>$9.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Plex%20$9.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="streaming" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/8LYLqzZk/image.png" alt="PornHub"></div>
+        <div class="card-body">
+          <h4>PornHub Premium</h4>
+          <p class="card-desc">Acceso Premium — 1 mes</p>
+          <div class="card-price"><strong>$12.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20PornHub%201%20mes%20$12.000">Comprar</a>
+        </div>
+      </div>
+
+      <!-- MÚSICA -->
+      <div class="card" data-category="musica" data-aos>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"></div>
+        <div class="card-body">
+          <h4>Spotify</h4>
+          <p class="card-desc">1 mes de música sin anuncios</p>
+          <div class="card-price"><strong>$12.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%201%20mes%20$12.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="musica" data-aos>
+        <div class="card-badge badge-savings">💰 Ahorra</div>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"></div>
+        <div class="card-body">
+          <h4>Spotify</h4>
+          <p class="card-desc">2 meses de música sin anuncios</p>
+          <div class="card-price"><strong>$18.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%202%20meses%20$18.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="musica" data-aos>
+        <div class="card-badge badge-hot">🔥 Mejor valor</div>
+        <div class="card-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify"></div>
+        <div class="card-body">
+          <h4>Spotify</h4>
+          <p class="card-desc">3 meses de música sin anuncios</p>
+          <div class="card-price"><strong>$25.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Spotify%203%20meses%20$25.000">Comprar</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="lms">
-    <h2 class="section-title">Plataformas de Aprendizaje en Línea (LMS)</h2>
-    <div class="cards-container">
-      <div class="card"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"><h4>Canva 1 mes</h4><p>$7.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%201%20mes%20$7.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"><h4>Canva 3 meses</h4><p>$14.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%203%20meses%20$14.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"><h4>Canva 12 meses</h4><p>$20.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%2012%20meses%20$20.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/tMQqkgcK/image.png" alt="Duolingo"><h4>Duolingo Pro 1 mes</h4><p>$8.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Duolingo%20Pro%201%20mes%20$8.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/tMQqkgcK/image.png" alt="Duolingo"><h4>Duolingo Pro 12 meses</h4><p>$20.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Duolingo%20Pro%2012%20meses%20$20.000">Más información</a></div>
-      <div class="card"><img src="https://i.ibb.co/8nG2CgWk/image.png" alt="Office 365"><h4>Office 365 - 12 meses</h4><p>$30.000</p><a href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Office%20365%2012%20meses%20$30.000">Más información</a></div>
+  <!-- LMS -->
+  <section id="lms" class="section section-alt">
+    <div class="section-header">
+      <div class="section-tag">📚</div>
+      <h2 class="section-title">Educación & Productividad</h2>
+      <p class="section-desc">Herramientas para crear, aprender y trabajar mejor</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"></div>
+        <div class="card-body">
+          <h4>Canva Pro</h4>
+          <p class="card-desc">Diseño ilimitado — 1 mes</p>
+          <div class="card-price"><strong>$7.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%201%20mes%20$7.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-badge badge-savings">💰 Ahorra</div>
+        <div class="card-icon"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"></div>
+        <div class="card-body">
+          <h4>Canva Pro</h4>
+          <p class="card-desc">Diseño ilimitado — 3 meses</p>
+          <div class="card-price"><strong>$14.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%203%20meses%20$14.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-badge badge-hot">🔥 Mejor valor</div>
+        <div class="card-icon"><img src="https://i.ibb.co/ZzHTC28y/image.png" alt="Canva"></div>
+        <div class="card-body">
+          <h4>Canva Pro</h4>
+          <p class="card-desc">Diseño ilimitado — 12 meses</p>
+          <div class="card-price"><strong>$20.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Canva%2012%20meses%20$20.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-icon"><img src="https://i.ibb.co/tMQqkgcK/image.png" alt="Duolingo"></div>
+        <div class="card-body">
+          <h4>Duolingo Plus</h4>
+          <p class="card-desc">Aprende idiomas — 1 mes</p>
+          <div class="card-price"><strong>$8.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Duolingo%20Pro%201%20mes%20$8.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-badge badge-hot">🔥 Mejor valor</div>
+        <div class="card-icon"><img src="https://i.ibb.co/tMQqkgcK/image.png" alt="Duolingo"></div>
+        <div class="card-body">
+          <h4>Duolingo Plus</h4>
+          <p class="card-desc">Aprende idiomas — 12 meses</p>
+          <div class="card-price"><strong>$20.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Duolingo%20Pro%2012%20meses%20$20.000">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card" data-category="lms" data-aos>
+        <div class="card-badge badge-premium">⭐ Premium</div>
+        <div class="card-icon"><img src="https://i.ibb.co/8nG2CgWk/image.png" alt="Office 365"></div>
+        <div class="card-body">
+          <h4>Microsoft 365</h4>
+          <p class="card-desc">Word, Excel, PowerPoint y más — 12 meses</p>
+          <div class="card-price"><strong>$30.000</strong></div>
+          <a class="card-btn" href="https://wa.me/573222117202?text=Hola,%20vengo%20de%20la%20pagina%20y%20quiero%20comprar%20Office%20365%2012%20meses%20$30.000">Comprar</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="contacto">
-    <h2 class="section-title">Contacto</h2>
-    <p style="text-align:center; font-size: 1.1rem;">Escríbenos a nuestro WhatsApp: <a href="https://wa.me/573222117202">+57 3222117202</a></p>
+  <!-- CONTACTO -->
+  <section id="contacto" class="section-contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2>¿Tienes dudas?</h2>
+        <p>Escríbenos directamente por WhatsApp y te respondemos al instante. También puedes pedir tu combo personalizado.</p>
+      </div>
+      <a class="contact-btn" href="https://wa.me/573222117202?text=Hola,%20tengo%20una%20pregunta%20sobre%20los%20servicios" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L0 24l6.335-1.508A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.031-1.388l-.361-.214-3.74.98.998-3.648-.235-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <strong>TecnologySmith</strong> — Todos los derechos reservados</p>
+    <p class="footer-sub">Desarrollado con ❤️ en Colombia</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
